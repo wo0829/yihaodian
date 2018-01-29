@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.content{
+    width: 1312px;
+    height: 662px;
+//  background: yellow;
+    margin: 0 auto;
+    .content_header{
+        width: 100%;
+        height: 88px;
+        border-bottom: 1px solid lightgray;
+//      background: orange;
+        img{
+            width: 160px;
+            height: 60px;
+            margin:16px 60px;
+            float: left;
+        }
+        div{
+            width: 300px;
+            height: 40px;
+            line-height: 40px;
+//          background: olive;
+            float: right;
+            
+            margin-right: 40px;
+            span{
+                font-size: 12px;
+                color: darkgray;
+            }
+            a{
+                text-decoration: none;
+                color: blue;
+            }
+            select{
+                margin-left: 25px;
+            }
+        }
+    }
+    .content_center{
+        
+        width: 100%;
+        height: 430px;
+       
+//      background: greenyellow;
+      .imto{
+            width: 420px;
+            height: 310px;
+            margin: 40px 0px;
+            float: left;
+        }
+        div{
+            width: 350px;
+            height: 350px;
+           
+//          background: khaki;
+           float: left;
+           margin-top: 70px;
+           margin-left: 170px;
+           .spo{
+               width: 100%;
+               float: left;
+               a{
+                   float: right;
+                   text-decoration: none;
+               }
+           }
+          .ino{
+               width: 100%;
+               height: 55px;
+               float: left;
+               margin-top: 12px;
+           }
+           .sp{
+               width: 100%;
+               margin-top: 12px;
+               float: left;
+               .sp_lio{
+                   float: left;
+               }
+               .sp_lit{
+                   float: right;
+               }
+           }
+           .spt{
+               width: 100%;
+               height: 50px;
+               line-height: 50px;
+               text-align: center;
+               background: orangered;
+               float: left;
+               color: white;
+               margin-top: 12px;
+           }
+           p{
+               margin-top: 12px;
+               float: left;
+           }
+           .imth{
+               width: 100%;
+               float: left;
+               margin-top: 12px;
+           }
+        }
+    }
+    .content_bottom{
+        width: 100%;
+        text-align: center;
+        float: left;
+        margin-top: 35px;
+    }
+}

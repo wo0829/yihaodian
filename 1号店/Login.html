@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<title>登录页面</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/Login.css"/>
+	</head>
+	<body>
+		<div class="content">
+			<div class="content_header">
+				<img src="img/01.png"/>
+				<div>
+					<span>您好，欢迎光临1号店！</span>
+					<a href="">请登录</a>
+					<select name="">
+						<option value="">帮助中心</option>
+					</select>
+				</div>
+			</div>
+			<div class="content_center">
+				<span><img src="img/2226.png" class="imto"/></span>
+				<div>
+					<span class="spo">1号店用户登录 <a href="">注册账号</a></span>
+					<!--<input type="text" pattern="^1[3-9]\d{9}$" required  class="ino" placeholder="邮箱/手机/用户名"/>-->
+					<form action="">
+						<input type="text" placeholder="邮箱/手机/用户名" pattern="\w{1,10}"  class="ino" id="kk" oninvalid="setCustomValidity('脑子是个好东西.希望你也有')" />
+					    <input type="password" name="" id="pwd" value="" class="ino" placeholder="密码"/>
+					
+					<span class="sp">
+						<li class="sp_lio"><input type="checkbox" name=""  value="" /> 自动登录</li>
+					    <li class="sp_lit">忘记密码</li>
+					</span>
+					<!--<span class="spt">登录</span>-->
+					<input type="submit" class="spt" value="登录" />
+					</form>
+					<p>更多网站合作登录</p>
+					<img src="img/2227.png" class="imth"/>
+				</div>
+			</div>
+			<div class="content_bottom">
+				<p>沪ICP备1302344号|合子B1.B2-2101335|营业执照</p>
+				<p>xcvhbnm@1号店网上超市2007-2016，allrightxcvbnnbvdc</p>
+			</div>
+		</div>
+		
+	</body>
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$("#pwd").blur(function () {
+		var pwd=$(this).val();
+		console.log(pwd);
+		var  reg=/^[a-zA-Z0-9]{4,10}$/;//密码由英文字母和数字组成的4-10位字符
+		if (reg.test(pwd)==false) {
+			console.log("密码格式不正确")
+			
+		}
+		
+	})
+$("#kk").blur(function () {
+		var user=$(this).val();
+		console.log(user);
+		var  reg=/^[a-zA-Z][a-zA-Z0-9]{3,15}$/;//用户名由英文字母和数字组成的4-16位字符，以字母开头
+		if (reg.test(user)==false) {
+			console.log("用户名不正确")
+			
+		}
+		
+	})
+
+	</script>
+	</html>
+	
